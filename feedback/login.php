@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$adminUsername = "admin";
-$adminPassword = "Theoderich007!";
+$adminUsername = "XXX";
+$adminPassword = "XXX!";
 
 $username = $_POST['username'];
 $password = $_POST['password'];
