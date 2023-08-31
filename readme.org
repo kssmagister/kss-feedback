@@ -1,6 +1,6 @@
 * kss-feedback
 ** apps / workflow
-The code in this GitHub repository implements a workflow for analyzing feedback data for KSS courses. The workflow consists of three steps:
+The code in this repository implements a workflow for analyzing feedback data for KSS courses. The workflow consists of three steps:
 1. =/feedback/=
    1. Collecting data and saving it in a database: In this step, feedback data from students is collected and stored in a database. The data can be collected, for example, via a web app or a survey.
 
