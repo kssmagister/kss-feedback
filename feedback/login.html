@@ -34,7 +34,7 @@
             $.post('login.php', formData, function(response) {
                 if (response.success) {
                     alert("Erfolgreich eingeloggt!");
-                    window.location.href = 'memoranda.html';
+                    window.location.href = 'input.html';
                 } else {
                     alert("Fehler beim Login: " + response.message);
                 }
