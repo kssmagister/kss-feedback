@@ -10,7 +10,7 @@ The code in this GitHub repository implements a workflow for analyzing feedback 
 
         [[file:login.png]]
 
-  [[file:verte.png]]
+  [[file:login2.png]]
 2. =app.py=
    1. Analyzing and evaluating the CSV file with OpenAI: In this step, the data from the CSV file is analyzed and evaluated with OpenAI. OpenAI is a company that develops artificial intelligence. OpenAI offers a range of tools and services for analyzing text and code.
 
