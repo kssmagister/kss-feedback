@@ -1,0 +1,35 @@
+* kss-feedback
+** apps / workflow
+The code in this GitHub repository implements a workflow for analyzing feedback data for KSS courses. The workflow consists of three steps:
+1. =/feedback/=
+   1. Collecting data and saving it in a database: In this step, feedback data from students is collected and stored in a database. The data can be collected, for example, via a web app or a survey.
+
+        [[file:input.png]]
+      
+   2. Downloading data as a CSV file: In this step, the data from the database is downloaded as a CSV file. The CSV file is a structured format that can be easily exchanged with other programs.
+
+        [[file:login.png]]
+
+  [[file:verte.png]]
+2. =app.py=
+   1. Analyzing and evaluating the CSV file with OpenAI: In this step, the data from the CSV file is analyzed and evaluated with OpenAI. OpenAI is a company that develops artificial intelligence. OpenAI offers a range of tools and services for analyzing text and code.
+
+  [[file:openai.png]]
+
+** What to do with analysis and reporting
+The analysis and reporting of the data with OpenAI can be done in various ways. For instance, OpenAI can be used to:
+
+- Identify trends in the data: OpenAI can be used to recognize trends in the data, such as in the ratings, comments, or questions from students.
+- Identify keywords and topics: OpenAI can be used to identify keywords and topics in the data. This information can be used to categorize and structure the feedback data.
+- Conduct sentiment analysis: OpenAI can be used to perform sentiment analysis, i.e., to determine whether the students rate the feedback positively or negatively.
+
+Analyzing and evaluating feedback data with OpenAI can help course instructors improve their courses. The instructors can use the results of the analysis to understand how students evaluate the courses and what improvements can be made.
+
+Here are some examples of using the analysis results:
+
+- Improving teaching materials: If students rate the teaching materials as insufficient, instructors can improve the materials, for example, by adding additional information or examples.
+- Improving lectures: If students find the lectures boring or incomprehensible, instructors can enhance the lectures, for example, by using more visualizations or breaking the lectures into smaller units.
+- Improving exercises: If students rate the exercises as too difficult or too easy, instructors can improve the exercises, for example, by adjusting the difficulty levels or adding more exercises.
+- Improving exams: If students rate the exams as unfair or inaccurate, instructors can improve the exams, for example, by adjusting the questions or adding more tasks.
+
+Analyzing feedback data is a valuable tool for course instructors. It can help instructors enhance their courses and better support their students.
