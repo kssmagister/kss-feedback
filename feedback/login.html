@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MEMORANDA</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body class="container mt-5">
+    <h1>Login</h1>
+    
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" name="username">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+
+        <button type="button" id="loginBtn" class="btn btn-primary">Login</button>
+    </form>
+
+    <script>
+        $('#loginBtn').on('click', function() {
+            let formData = {
+                username: $('#username').val(),
+                password: $('#password').val()
+            };
+
+            $.post('login.php', formData, function(response) {
+                if (response.success) {
+                    alert("Erfolgreich eingeloggt!");
+                    window.location.href = 'memoranda.html';
+                } else {
+                    alert("Fehler beim Login: " + response.message);
+                }
+            }, 'json');
+        });
+    </script>
+</body>
+</html>
