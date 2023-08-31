@@ -10,10 +10,10 @@ if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn']) {
     exit;
 }
 
-$servername = "rutzimp.mysql.db.internal";
-$username = "rutzimp_pensat";
-$password = "hbr2D3Y=vEbGiWcnjeS7";
-$dbname = "rutzimp_pensum2023";
+$servername = "XXX";
+$username = "XXX";
+$password = "XXX";
+$dbname = "XXX";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
