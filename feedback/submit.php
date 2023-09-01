@@ -1,8 +1,5 @@
 <?php
-$servername = "XXX";
-$username = "XXX";
-$password = "XXX";
-$dbname = "XXX";
+include 'db_config.php';
 
 // Verbindung erstellen
 $conn = new mysqli($servername, $username, $password, $dbname);

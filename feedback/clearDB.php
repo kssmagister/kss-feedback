@@ -10,12 +10,11 @@ if (!isset($_SESSION['loggedIn']) || !$_SESSION['loggedIn']) {
     exit;
 }
 
-$servername = "XXX";
-$username = "XXX";
-$password = "XXX";
-$dbname = "XXX";
+include 'db_config.php';
+// Verbindung erstellen
+$conn = new mysqli($servername, $username, $password, $dbname);
+//$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if (!$conn) {
     $response["message"] = "Verbindung zur Datenbank fehlgeschlagen: " . mysqli_connect_error();
